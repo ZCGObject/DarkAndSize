@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 getResources();
                 recreate();
 
+
                 break;
         }
     }
