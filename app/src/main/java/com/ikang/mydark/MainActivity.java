@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e(TAG, "888  fs=" + fs);
                 getResources();
                 recreate();
+
                 break;
         }
     }
