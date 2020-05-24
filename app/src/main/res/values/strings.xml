@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">深色模式</string>
+
+    <string name="zh_text_sure">m_确定</string>
+    <string name="zh_text_cancel">m_取消</string>
+
+    <string name="en_text_sure">m_sure</string>
+    <string name="en_text_cancel">m_cancel</string>
+
+
+    <string name="jp_text_sure">m_を選択します</string>
+    <string name="jp_text_cancel">m_キャンセル</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="我是主页面"
+        android:textSize="?font10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="我是主页面"
+        android:textSize="?font11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="?text_cancel"
+        android:textSize="?font12" />
+
+
+    <Button
+        android:id="@+id/btn_skip1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小等字体 + 中文" />
+
+    <Button
+        android:id="@+id/btn_skip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中等字体 + 英文" />
+
+    <Button
+        android:id="@+id/btn_skip3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大等字体 + 日文" />
+
+    <TextView
+        android:id="@+id/sureTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:gravity="center"
+        android:textSize="?font10"
+        android:text="?text_sure"
+        android:textColor="@color/color_text"/>
+
+
+    <TextView
+        android:id="@+id/cancelTv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="?font10"
+        android:text="?text_cancel"
+        android:textColor="@color/color_text"/>
+
+
+    <TextView
+        android:id="@+id/fsTv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="?text_cancel"
+        android:textColor="@color/color_text"/>
+
+    <TextView
+        android:id="@+id/fsTv1"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="5sp"
+        android:text="?text_cancel"
+        android:textColor="@color/color_text"/>
+
+
+    <TextView
+        android:id="@+id/duibiTv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="?text_cancel"
+        android:textColor="@color/color_text"/>
+</LinearLayout>

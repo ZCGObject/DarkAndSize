@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Default_TextSize_Small">
+        <item name="font10">@dimen/font_size_9sp</item>
+        <item name="font11">@dimen/font_size_9sp</item>
+        <item name="font12">@dimen/font_size_9sp</item>
+        <item name="font13">@dimen/font_size_12sp</item>
+        <item name="font14">@dimen/font_size_13sp</item>
+        <item name="font15">@dimen/font_size_14sp</item>
+        <item name="font16">@dimen/font_size_15sp</item>
+        <item name="font17">@dimen/font_size_16sp</item>
+        <item name="font18">@dimen/font_size_17sp</item>
+        <item name="font19">@dimen/font_size_18sp</item>
+    </style>
+
+
+    <style name="Default_TextSize_Middle">
+        <item name="font10">@dimen/font_size_15sp</item>
+        <item name="font11">@dimen/font_size_16sp</item>
+        <item name="font12">@dimen/font_size_17sp</item>
+        <item name="font13">@dimen/font_size_13sp</item>
+        <item name="font14">@dimen/font_size_14sp</item>
+        <item name="font15">@dimen/font_size_15sp</item>
+        <item name="font16">@dimen/font_size_16sp</item>
+        <item name="font17">@dimen/font_size_17sp</item>
+        <item name="font18">@dimen/font_size_18sp</item>
+        <item name="font19">@dimen/font_size_19sp</item>
+    </style>
+
+
+    <style name="Default_TextSize_Big">
+        <item name="font10">@dimen/font_size_18sp</item>
+        <item name="font11">@dimen/font_size_18sp</item>
+        <item name="font12">@dimen/font_size_18sp</item>
+        <item name="font13">@dimen/font_size_14sp</item>
+        <item name="font14">@dimen/font_size_15sp</item>
+        <item name="font15">@dimen/font_size_16sp</item>
+        <item name="font16">@dimen/font_size_17sp</item>
+        <item name="font17">@dimen/font_size_18sp</item>
+        <item name="font18">@dimen/font_size_19sp</item>
+        <item name="font19">@dimen/font_size_20sp</item>
+    </style>
+
+
+    <style name="Text_Zh">
+        <item name="text_sure">@string/zh_text_sure</item>
+        <item name="text_cancel">@string/zh_text_cancel</item>
+    </style>
+
+    <style name="Text_En">
+        <item name="text_sure">@string/en_text_sure</item>
+        <item name="text_cancel">@string/en_text_cancel</item>
+    </style>
+
+    <style name="Text_Jp">
+        <item name="text_sure">@string/jp_text_sure</item>
+        <item name="text_cancel">@string/jp_text_cancel</item>
+    </style>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DarkMode</string>
+
+
+    <string name="zh_text_sure">xt_确定</string>
+    <string name="zh_text_cancel">xt_取消</string>
+
+    <string name="en_text_sure">xt_sure</string>
+    <string name="en_text_cancel">xt_cancel</string>
+
+
+    <string name="jp_text_sure">xt_を選択します</string>
+    <string name="jp_text_cancel">xt_キャンセル</string>
+
+</resources>
