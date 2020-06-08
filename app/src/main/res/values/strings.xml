@@ -3,12 +3,15 @@
 
     <string name="zh_text_sure">m_确定</string>
     <string name="zh_text_cancel">m_取消</string>
+    <string name="zh_text_dong_tai">xt_动态</string>
+
 
     <string name="en_text_sure">m_sure</string>
     <string name="en_text_cancel">m_cancel</string>
-
+    <string name="en_text_dong_tai">xt_dongtai</string>
 
     <string name="jp_text_sure">m_を選択します</string>
     <string name="jp_text_cancel">m_キャンセル</string>
+    <string name="jp_text_dong_tai">xt_ダイナミック</string>
 
 </resources>

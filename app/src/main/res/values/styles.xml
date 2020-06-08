@@ -54,16 +54,20 @@
     <style name="Text_Zh">
         <item name="text_sure">@string/zh_text_sure</item>
         <item name="text_cancel">@string/zh_text_cancel</item>
+        <item name="text_dong_tai">@string/zh_text_dong_tai</item>
     </style>
 
     <style name="Text_En">
         <item name="text_sure">@string/en_text_sure</item>
         <item name="text_cancel">@string/en_text_cancel</item>
+        <item name="text_dong_tai">@string/en_text_dong_tai</item>
     </style>
 
     <style name="Text_Jp">
         <item name="text_sure">@string/jp_text_sure</item>
         <item name="text_cancel">@string/jp_text_cancel</item>
+        <item name="text_dong_tai">@string/jp_text_dong_tai</item>
     </style>
+
 
 </resources>

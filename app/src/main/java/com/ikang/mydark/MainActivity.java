@@ -1,12 +1,17 @@
 package com.ikang.mydark;
 
+import androidx.annotation.StyleRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,9 +21,14 @@ import com.ikang.mydark.util.SharePreferenceUtils;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_skip1, btn_skip2, btn_skip3;
-    private TextView fsTv, duibiTv, fsTv1;
+    private TextView fsTv, duibiTv, fsTv1, cancelTv;
 
 
+
+
+
+
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,12 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         setContentView(R.layout.activity_main);
 
+
+
         btn_skip1 = findViewById(R.id.btn_skip1);
         btn_skip2 = findViewById(R.id.btn_skip2);
         btn_skip3 = findViewById(R.id.btn_skip3);
         fsTv = findViewById(R.id.fsTv);
         fsTv1 = findViewById(R.id.fsTv1);
         duibiTv = findViewById(R.id.duibiTv);
+        cancelTv = findViewById(R.id.cancelTv);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -54,8 +67,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fsTv.setOnClickListener(this);
         fsTv1.setOnClickListener(this);
         duibiTv.setOnClickListener(this);
+        cancelTv.setOnClickListener(this);
 
+        TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
+        String str = array.getString(R.styleable.textD_text_dong_tai);
+        cancelTv.setText(str);
+        array.recycle();
+
+//        parseStyle(R.style.Text_Zh);
     }
+
+
+    /**
+     * 描述：动态解析 style
+     */
+//    private void parseStyle(@StyleRes int styleId) {
+//        TypedArray array = obtainStyledAttributes(styleId, R.styleable.text);
+//        CharSequence cancelText = array.getText(R.styleable.text_text_dong_tai);
+//        cancelTv.setText(cancelText.toString());
+//
+//        array.recycle();
+//    }
+
 
     @Override
     protected void onNewIntent(Intent intent) {

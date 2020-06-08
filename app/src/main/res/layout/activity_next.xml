@@ -17,4 +17,13 @@
         android:text="?text_cancel"
         android:layout_centerInParent="true"
         android:textColor="@color/color_text"/>
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/duibiTv"/>
 </RelativeLayout>

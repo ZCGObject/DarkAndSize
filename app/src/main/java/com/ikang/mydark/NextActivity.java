@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ikang.mydark.util.SharePreferenceUtils;
@@ -15,6 +16,7 @@ import com.ikang.mydark.util.SharePreferenceUtils;
 public class NextActivity extends AppCompatActivity {
 
     private TextView duibiTv;
+    private ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,16 @@ public class NextActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 restartApp();
+            }
+        });
+        iv = findViewById(R.id.iv);
+
+        iv.setImageResource(R.drawable.ic_tixingwo);
+
+        findViewById(R.id.iv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NextActivity.this, ThreeActivity.class));
             }
         });
     }

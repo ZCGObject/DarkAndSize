@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_soffffff_c20_20_0_0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ikang.mydark.util.TouchPriorityView
+        android:id="@+id/dragView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="6dp"
+            android:background="#777777" />
+
+    </com.ikang.mydark.util.TouchPriorityView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="分享到" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="50dp">
+
+        <ImageView
+            android:id="@+id/wechatIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/wechatmomentsIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp" />
+
+</LinearLayout>

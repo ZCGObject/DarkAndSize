@@ -5,45 +5,79 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="我是主页面"
-        android:textSize="?font10" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="我是主页面"
-        android:textSize="?font11" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="?text_cancel"
-        android:textSize="?font12" />
-
-
-    <Button
-        android:id="@+id/btn_skip1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="小等字体 + 中文" />
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
 
-    <Button
-        android:id="@+id/btn_skip2"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="我是主页面"
+            android:gravity="center"
+            android:textSize="?font10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="我是主页面"
+            android:gravity="center"
+            android:textSize="?font11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="?text_cancel"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="?font12" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="中等字体 + 英文" />
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
 
-    <Button
-        android:id="@+id/btn_skip3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="大等字体 + 日文" />
+
+        <Button
+            android:id="@+id/btn_skip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="小等字体 + 中文" />
+
+        <Button
+            android:id="@+id/btn_skip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="中等字体 + 英文" />
+
+        <Button
+            android:id="@+id/btn_skip3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="大等字体 + 日文" />
+
+    </LinearLayout>
+
+
+
 
     <TextView
         android:id="@+id/sureTv"

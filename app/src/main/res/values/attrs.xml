@@ -11,8 +11,11 @@
     <attr name="font18" format="dimension" />
     <attr name="font19" format="dimension" />
 
+    <declare-styleable name="textD">
+        <attr name="text_sure" format="reference" />
+        <attr name="text_cancel" format="reference" />
+        <attr name="text_dong_tai" format="reference" />
+    </declare-styleable>
 
-    <attr name="text_sure" format="reference" />
-    <attr name="text_cancel" format="reference" />
 
 </resources>
