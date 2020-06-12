@@ -189,7 +189,7 @@ public class ThreeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ThreeActivity.this, FourActivity.class));
-                finish();
+//                finish();
             }
         });
 

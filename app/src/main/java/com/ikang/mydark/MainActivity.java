@@ -1,27 +1,24 @@
 package com.ikang.mydark;
 
-import androidx.annotation.StyleRes;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ikang.mydark.util.SharePreferenceUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_skip1, btn_skip2, btn_skip3;
-    private TextView fsTv, duibiTv, fsTv1, cancelTv;
+    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv;
 
 
 
@@ -60,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fsTv1 = findViewById(R.id.fsTv1);
         duibiTv = findViewById(R.id.duibiTv);
         cancelTv = findViewById(R.id.cancelTv);
+        VpTv = findViewById(R.id.VpTv);
+        RvTv = findViewById(R.id.RvTv);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -68,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fsTv1.setOnClickListener(this);
         duibiTv.setOnClickListener(this);
         cancelTv.setOnClickListener(this);
+        VpTv.setOnClickListener(this);
+        RvTv.setOnClickListener(this);
 
         TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
         String str = array.getString(R.styleable.textD_text_dong_tai);
@@ -160,6 +161,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 recreate();
 
 
+                break;
+            case R.id.VpTv:
+                startActivity(new Intent(MainActivity.this, VPActivity.class));
+                break;
+
+            case R.id.RvTv:
+                startActivity(new Intent(MainActivity.this, RecyclerviewSnapActivity.class));
                 break;
         }
     }

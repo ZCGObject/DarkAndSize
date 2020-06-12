@@ -10,10 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FourActivity"></activity>
-        <activity android:name=".ThreeActivity" />
-        <activity android:name=".TestActivity" />
-        <activity android:name=".NextActivity" />
+        <activity android:name=".RecyclerviewSnapActivity"></activity>
+        <activity android:name=".VPActivity" />
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask">
@@ -22,6 +20,76 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <data android:scheme="${ty_url_scheme}" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- ikang://com.ikang.mydark:8080/mainActivity?from=100 -->
+            <!-- com.ikang.mydark：即Scheme 该Scheme协议名称 -->
+            <!-- darkandsize：即Host,代表Scheme作用于哪个地址域 -->
+            <!-- 8080：即port，代表端口号 -->
+            <!-- mainactivity：即path，代表打开的页面 -->
+            <!-- id：即query，代表传递的参数 -->
+            <intent-filter>
+
+                <!-- 协议部分，随便设置 -->
+                <data
+                    android:host="com.ikang.mydark"
+                    android:path="/mainActivity"
+                    android:port="8080"
+                    android:scheme="ikang" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 协议部分，随便设置 -->
+                <data
+                    android:host="mydark"
+                    android:path="/mainActivity"
+                    android:port="8080"
+                    android:scheme="ikang" />
+                <!-- 下面这几行也必须得设置 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FourActivity" />
+        <activity android:name=".ThreeActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".NextActivity" />
+        <activity android:name=".UrlSchemeActivity">
+
+            <!-- ikang://com.ikang.mydark:8080/mainactivity?id=100 -->
+            <!-- com.ikang.mydark：即Scheme 该Scheme协议名称 -->
+            <!-- darkandsize：即Host,代表Scheme作用于哪个地址域 -->
+            <!-- 8080：即port，代表端口号 -->
+            <!-- mainactivity：即path，代表打开的页面 -->
+            <!-- id：即query，代表传递的参数 -->
+            <!-- <intent-filter> -->
+            <!-- &lt;!&ndash;协议部分，随便设置&ndash;&gt; -->
+            <!-- <data -->
+            <!-- android:scheme="ikang" -->
+            <!-- android:host="com.ikang.mydark" -->
+            <!-- android:port="8080" -->
+            <!-- android:path="/mainactivity" /> -->
+            <!-- &lt;!&ndash;下面这几行也必须得设置&ndash;&gt; -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- <action android:name="android.intent.action.VIEW"/> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

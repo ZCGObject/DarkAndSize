@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -62,9 +63,13 @@ public class FourActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animator.setIntValues(0xffff0000, 0xff0000ff);
+//                animator.setIntValues(0xffff0000, 0xff0000ff);
+                startActivity(new Intent(FourActivity.this, UrlSchemeActivity.class));
             }
         });
+
+
+
     }
 
     /**

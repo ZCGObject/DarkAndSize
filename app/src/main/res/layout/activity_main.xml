@@ -107,4 +107,28 @@
         android:textSize="16dp"
         android:text="?text_cancel"
         android:textColor="@color/color_text"/>
+
+    <TextView
+        android:id="@+id/VpTv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="跳转到Vp"
+        android:textColor="@color/color_text"/>
+
+    <TextView
+        android:id="@+id/RvTv"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@color/color_bg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="跳转到RvSnape"
+        android:textColor="@color/color_text"/>
 </LinearLayout>
