@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaletteActivity"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yu_0"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hai_4"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jing_3"
+        android:layout_marginBottom="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v22"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v33"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v44"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v55"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v66"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v111"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v222"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:id="@+id/v333"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v444"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v555"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+
+        <View
+            android:id="@+id/v666"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

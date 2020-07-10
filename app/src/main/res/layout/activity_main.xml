@@ -1,134 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="我是主页面"
-        android:textSize="?font10" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="我是主页面"
-        android:textSize="?font11" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="?text_cancel"
-        android:textSize="?font12" />
-
-
-    <Button
-        android:id="@+id/btn_skip1"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="小等字体 + 中文" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_skip2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="中等字体 + 英文" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="我是主页面"
+            android:textSize="?font10" />
 
-    <Button
-        android:id="@+id/btn_skip3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="大等字体 + 日文" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="我是主页面"
+            android:textSize="?font11" />
 
-    <TextView
-        android:id="@+id/sureTv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:gravity="center"
-        android:textSize="?font10"
-        android:text="?text_sure"
-        android:textColor="@color/color_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="?text_cancel"
+            android:textSize="?font12" />
 
 
-    <TextView
-        android:id="@+id/cancelTv"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="?font10"
-        android:text="?text_cancel"
-        android:textColor="@color/color_text"/>
+        <Button
+            android:id="@+id/btn_skip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小等字体 + 中文" />
+
+        <Button
+            android:id="@+id/btn_skip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中等字体 + 英文" />
+
+        <Button
+            android:id="@+id/btn_skip3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大等字体 + 日文" />
+
+        <TextView
+            android:id="@+id/sureTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="?text_sure"
+            android:textColor="@color/color_text"
+            android:textSize="?font10" />
 
 
-    <TextView
-        android:id="@+id/fsTv"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:text="?text_cancel"
-        android:textColor="@color/color_text"/>
-
-    <TextView
-        android:id="@+id/fsTv1"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="5sp"
-        android:text="?text_cancel"
-        android:textColor="@color/color_text"/>
+        <TextView
+            android:id="@+id/cancelTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="?text_cancel"
+            android:textColor="@color/color_text"
+            android:textSize="?font10" />
 
 
-    <TextView
-        android:id="@+id/duibiTv"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="16dp"
-        android:text="?text_cancel"
-        android:textColor="@color/color_text"/>
+        <TextView
+            android:id="@+id/fsTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="?text_cancel"
+            android:textColor="@color/color_text"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/VpTv"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="16dp"
-        android:text="跳转到Vp"
-        android:textColor="@color/color_text"/>
+        <TextView
+            android:id="@+id/fsTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="?text_cancel"
+            android:textColor="@color/color_text"
+            android:textSize="5sp" />
 
-    <TextView
-        android:id="@+id/RvTv"
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:background="@color/color_bg"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="16dp"
-        android:text="跳转到RvSnape"
-        android:textColor="@color/color_text"/>
-</LinearLayout>
+
+        <TextView
+            android:id="@+id/duibiTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="?text_cancel"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/VpTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="跳转到Vp"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/RvTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="跳转到RvSnape"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvPalette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="跳转到Palette"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="跳转到Text"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="跳转到Date"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</ScrollView>

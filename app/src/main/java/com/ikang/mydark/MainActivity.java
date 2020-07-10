@@ -18,7 +18,7 @@ import com.ikang.mydark.util.SharePreferenceUtils;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_skip1, btn_skip2, btn_skip3;
-    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv;
+    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette, tvText, tvDate;
 
 
 
@@ -59,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cancelTv = findViewById(R.id.cancelTv);
         VpTv = findViewById(R.id.VpTv);
         RvTv = findViewById(R.id.RvTv);
+        tvPalette = findViewById(R.id.tvPalette);
+        tvText = findViewById(R.id.tvText);
+        tvDate = findViewById(R.id.tvDate);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -69,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cancelTv.setOnClickListener(this);
         VpTv.setOnClickListener(this);
         RvTv.setOnClickListener(this);
+        tvPalette.setOnClickListener(this);
+        tvText.setOnClickListener(this);
+        tvDate.setOnClickListener(this);
 
         TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
         String str = array.getString(R.styleable.textD_text_dong_tai);
@@ -169,6 +175,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.RvTv:
                 startActivity(new Intent(MainActivity.this, RecyclerviewSnapActivity.class));
                 break;
+
+            case R.id.tvPalette:
+                startActivity(new Intent(MainActivity.this, PaletteActivity.class));
+                break;
+
+            case R.id.tvText:
+                startActivity(new Intent(MainActivity.this, TextActivity.class));
+                break;
+
+            case R.id.tvDate:
+                startActivity(new Intent(MainActivity.this, DateActivity.class));
+                break;
+
+
+
+
         }
     }
 
