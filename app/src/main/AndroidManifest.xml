@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DateActivity"></activity>
+        <activity android:name=".handler.HandlerTest1Activity"></activity>
+        <activity android:name=".handler.HandlerTestActivity" />
+        <activity android:name=".CrashTestActivity" />
+        <activity android:name=".StaticTest1Activity" />
+        <activity android:name=".StaticTestActivity" />
+        <activity android:name=".DateActivity" />
         <activity android:name=".TextActivity" />
         <activity android:name=".PaletteActivity" />
         <activity android:name=".RecyclerviewSnapActivity" />

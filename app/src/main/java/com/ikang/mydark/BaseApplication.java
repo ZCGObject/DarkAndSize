@@ -23,6 +23,8 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         SharePreferenceUtils.put(this,"fs",1.0f);
+
+//        CrashHandler.getInstance().init(this);
     }
 
     @Override

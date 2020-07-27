@@ -173,6 +173,19 @@
             android:text="跳转到Date"
             android:textColor="@color/color_text"
             android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="测试对象"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
     </LinearLayout>
 
 

@@ -13,12 +13,16 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.ikang.mydark.handler.HandlerTest1Activity;
+import com.ikang.mydark.handler.HandlerTestActivity;
 import com.ikang.mydark.util.SharePreferenceUtils;
+
+import java.util.logging.Level;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_skip1, btn_skip2, btn_skip3;
-    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette, tvText, tvDate;
+    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette, tvText, tvDate, tvTest;
 
 
 
@@ -62,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvPalette = findViewById(R.id.tvPalette);
         tvText = findViewById(R.id.tvText);
         tvDate = findViewById(R.id.tvDate);
+        tvTest = findViewById(R.id.tvTest);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -75,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvPalette.setOnClickListener(this);
         tvText.setOnClickListener(this);
         tvDate.setOnClickListener(this);
+        tvTest.setOnClickListener(this);
 
         TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
         String str = array.getString(R.styleable.textD_text_dong_tai);
@@ -188,6 +194,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, DateActivity.class));
                 break;
 
+            case R.id.tvTest:
+//                byte[] content = new byte[1000 * 1000 * 40];
+//                Log.e("length---->>>" , content.length+"");
+                startActivity(new Intent(this, StaticTestActivity.class));
+//                startActivity(new Intent(this, CrashTestActivity.class));
+//                startActivity(new Intent(this, HandlerTestActivity.class));
+                break;
 
 
 
