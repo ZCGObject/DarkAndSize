@@ -6,8 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
+
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:background">@drawable/bg_splash_style</item>
+    </style>
 
     <style name="Default_TextSize_Small">
         <item name="font10">@dimen/font_size_9sp</item>

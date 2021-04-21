@@ -10,7 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".handler.HandlerTest1Activity"></activity>
+        <activity android:name=".fanshe.FanSheActivity"></activity>
+        <activity android:name=".CloneObjectTestActivity" />
+        <activity android:name=".TextBoldActivity" />
+        <activity android:name=".statictest.StaticTest2Activity" />
+        <activity android:name=".statictest.StaticTest0Activity" />
+        <activity android:name=".threadpool.ThreadPoolTest1Activity" />
+        <activity android:name=".TestReturnActivity" /> <!-- <meta-dataforceDarkAllowed -->
+        <!-- android:name="android.max_aspect" -->
+        <!-- android:value="2.5" /> -->
+        <activity
+            android:name=".DimenActivity"
+            android:theme="@style/SplashTheme" />
+        <activity android:name=".BianLiangTestActivity" />
+        <activity android:name=".xiecheng.XiechengTest1Activity" />
+        <activity android:name=".xiecheng.XieChengTextActivity" />
+        <activity android:name=".handler.HandlerTest1Activity" />
         <activity android:name=".handler.HandlerTestActivity" />
         <activity android:name=".CrashTestActivity" />
         <activity android:name=".StaticTest1Activity" />
@@ -72,6 +87,28 @@
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ikang.mydark.com"
+                    android:path="/mainActivity"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="newuat2-m.health.ikang.com"
+                    android:path="/mainActivity"
+                    android:scheme="http" />
             </intent-filter>
         </activity>
         <activity android:name=".FourActivity" />

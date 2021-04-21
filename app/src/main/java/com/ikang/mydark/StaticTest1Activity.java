@@ -90,19 +90,6 @@ public class StaticTest1Activity extends AppCompatActivity  implements View.OnCl
         return list;
     }
 
-    public static <T> List<T> parseArray1(int i){
-
-        T t = (T) String.valueOf(i);
-        List<T> list = new ArrayList<>();
-        list.add(t);
-        return list;
-    }
-
-
-    public static <T> void parseArray2(int i,  Class<T> object){
-
-        getTType(object);
-    }
 
 
     private static Type getTType(Class<?> clazz) {

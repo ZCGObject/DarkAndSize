@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ import com.ikang.mydark.util.BaseBean;
 import com.ikang.mydark.util.BaseResult;
 import com.ikang.mydark.util.Person;
 import com.ikang.mydark.util.RequestListener;
+import com.ikang.mydark.util.RequestNewListener;
 import com.ikang.mydark.util.TestFanXing;
 
 import java.util.List;
@@ -37,8 +39,6 @@ public class StaticTestActivity extends AppCompatActivity implements View.OnClic
         btn1 = findViewById(R.id.btn1);
 
 
-
-
         btn.setOnClickListener(this);
         btnJump.setOnClickListener(this);
         btnJump1.setOnClickListener(this);
@@ -53,7 +53,7 @@ public class StaticTestActivity extends AppCompatActivity implements View.OnClic
                 new TestFanXing().getData(StaticTestActivity.this, new RequestListener<Person>() {
                     @Override
                     public void onSuccess(Person person) {
-                        Log.e("person--->>", person.toString());
+                        Log.e("000  person--->>", person.toString());
                     }
 
                     @Override
@@ -63,6 +63,17 @@ public class StaticTestActivity extends AppCompatActivity implements View.OnClic
                 });
 
 
+//                new TestFanXing().getData(StaticTestActivity.this, new RequestListener<String>() {
+//                    @Override
+//                    public void onSuccess(String s) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onFailed(String err) {
+//
+//                    }
+//                });
 
 //                new TestFanXing().getData(StaticTestActivity.this, new RequestListener<BaseResult>() {
 //                    @Override
@@ -91,14 +102,29 @@ public class StaticTestActivity extends AppCompatActivity implements View.OnClic
 //
 //                    }
 //                });
+                new TestFanXing().getO(new RequestNewListener<Person>() {
 
+                    @Override
+                    public void onSuccess(Person person) {
+                        Log.e("111  person--->>", person.toString());
+                    }
+
+                    @Override
+                    public void onFailed(String err) {
+
+                    }
+                });
 
             }
+
+
         });
 
 
-
-
+        // ATTENTION: This was auto-generated to handle app links.
+        Intent appLinkIntent = getIntent();
+        String appLinkAction = appLinkIntent.getAction();
+        Uri appLinkData = appLinkIntent.getData();
     }
 
 
