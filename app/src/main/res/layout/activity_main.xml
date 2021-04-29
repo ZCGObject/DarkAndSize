@@ -252,6 +252,19 @@
             android:text="测试反射"
             android:textColor="@color/color_text"
             android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/tvOOM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/color_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="测试内存"
+            android:textColor="@color/color_text"
+            android:textSize="16dp" />
     </LinearLayout>
 
 

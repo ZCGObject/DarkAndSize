@@ -20,7 +20,8 @@ import com.ikang.mydark.util.SharePreferenceUtils;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btn_skip1, btn_skip2, btn_skip3;
-    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette, tvText, tvDate, tvTest, tvDimen, tvReturn, tvBold, tvClone, tvFanshe;
+    private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette,
+            tvText, tvDate, tvTest, tvDimen, tvReturn, tvBold, tvClone, tvFanshe, tvOOM;
 
 
 
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBold = findViewById(R.id.tvBold);
         tvClone = findViewById(R.id.tvClone);
         tvFanshe = findViewById(R.id.tvFanshe);
+        tvOOM = findViewById(R.id.tvOOM);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBold.setOnClickListener(this);
         tvClone.setOnClickListener(this);
         tvFanshe.setOnClickListener(this);
+        tvOOM.setOnClickListener(this);
 
         TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
         String str = array.getString(R.styleable.textD_text_dong_tai);
@@ -233,6 +236,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tvFanshe:
                 startActivity(new Intent(MainActivity.this, FanSheActivity.class));
                 break;
+
+            case R.id.tvOOM:
+                startActivity(new Intent(MainActivity.this, OomTestActivity.class));
+                break;
+
         }
     }
 

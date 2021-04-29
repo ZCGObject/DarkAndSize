@@ -4,6 +4,10 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.ikang.mydark.R
+import java.util.*
+import kotlin.collections.HashMap
+import kotlin.collections.HashSet
+import kotlin.collections.LinkedHashMap
 
 class FanSheActivity : AppCompatActivity() {
 
@@ -19,42 +23,60 @@ class FanSheActivity : AppCompatActivity() {
 //        FanSheUtil.fanshe()
 
 
-        val t1 = Any()
-        val t2 = Any()
+        var hashMap = HashMap<String, String>()
+        var linkedHashMap = LinkedHashMap<String, String>()
+        var treeMap = TreeMap<String, String>()
 
+        var hashSet = HashSet<String>()
+        Log.e(TAG, "-----------------------hashSet---------------------")
+        hashSet.add("5")
+        hashSet.add("1")
+        hashSet.add("8")
+        hashSet.add("2")
+        hashSet.add("d")
+        hashSet.add("a")
+        hashSet.add("c")
+        hashSet.forEach(){
+            Log.e(TAG, "$it")
+        }
 
-        object : Thread() {
-            override fun run() {
-                synchronized(t1) {
-                    Log.e(TAG, "Thread1 get t1")
-                    try {
-//                        Log.e(TAG, "Thread1 doing 000")
-                        sleep(1000)
-//                        Log.e(TAG, "Thread1 doing 111")
-                    } catch (e: Exception) {
-                    }
-                    Log.e(TAG, "Thread1 doing 222")
-                    synchronized(t2) { Log.e(TAG, "Thread1 get t2") }
-                }
-            }
-        }.start()
+        Log.e(TAG, "-----------------------hashMap---------------------")
+        hashMap["5"] = "555"
+        hashMap["1"] = "111"
+        hashMap["8"] = "888"
+        hashMap["2"] = "222"
+        hashMap["d"] = "ddd"
+        hashMap["a"] = "aaa"
+        hashMap["c"] = "ccc"
 
-        object : Thread() {
-            override fun run() {
-                synchronized(t2) {
-                    Log.e(TAG, "Thread2 get t2")
-                    try {
-//                        Log.e(TAG, "Thread2 doing 000")
-                        sleep(1000)
-//                        Log.e(TAG, "Thread2 doing  111")
-                    } catch (e: Exception) {
-                    }
-                    Log.e(TAG, "Thread2 doing  222")
-                    synchronized(t1) { Log.e(TAG, "Thread2 get t1") }
-                }
-            }
-        }.start()
+        hashMap.forEach(){
+            Log.e(TAG, "${it.key}____${it.value}")
+        }
+        Log.e(TAG, "-----------------------linkedHashMap---------------------")
+        linkedHashMap["5"] = "555"
+        linkedHashMap["1"] = "111"
+        linkedHashMap["8"] = "888"
+        linkedHashMap["2"] = "222"
+        linkedHashMap["d"] = "ddd"
+        linkedHashMap["a"] = "aaa"
+        linkedHashMap["c"] = "ccc"
 
+        linkedHashMap.forEach(){
+            Log.e(TAG, "${it.key}____${it.value}")
+        }
+
+        Log.e(TAG, "---------------------treeMap-----------------------")
+        treeMap["5"] = "555"
+        treeMap["1"] = "111"
+        treeMap["8"] = "888"
+        treeMap["2"] = "222"
+        treeMap["d"] = "ddd"
+        treeMap["a"] = "aaa"
+        treeMap["c"] = "ccc"
+
+        treeMap.forEach(){
+            Log.e(TAG, "${it.key}____${it.value}")
+        }
 
 
 
