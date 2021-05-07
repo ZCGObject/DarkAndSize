@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aidltest.AidlTestActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/aidlContent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#88789789"
+        android:text="默认内容"/>
+
+
+    <TextView
+        android:id="@+id/bindService"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#88789789"
+        android:text="启动服务"/>
+
+
+
+    <TextView
+        android:id="@+id/getServiceContent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#88789789"
+        android:text="获取服务内容"/>
+
+    <TextView
+        android:id="@+id/unbindService"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#88789789"
+        android:text="解绑服务"/>
+
+
+
+</LinearLayout>

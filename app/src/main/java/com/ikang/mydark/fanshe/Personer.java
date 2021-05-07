@@ -1,16 +1,16 @@
 package com.ikang.mydark.fanshe;
 
-public class Person {
+public class Personer {
  
     private int age;
     private String name;
  
-    public Person( String name,int age) {
+    public Personer(String name, int age) {
         this.age = age;
         this.name = name;
     }
  
-    public Person() {
+    public Personer() {
     }
  
  

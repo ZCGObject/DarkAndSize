@@ -3,7 +3,8 @@
     package="com.ikang.mydark">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -12,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OomTestActivity"></activity>
+        <activity android:name=".aidltest.AidlTestActivity"></activity>
+        <activity android:name=".service.ServiceActivity" />
+        <activity android:name=".OomTestActivity" />
         <activity android:name=".sisuo.SiSuoActivity" />
         <activity android:name=".fanshe.FanSheActivity" />
         <activity android:name=".CloneObjectTestActivity" />
@@ -140,6 +143,10 @@
             <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
             <!-- </intent-filter> -->
         </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:process="com.zcg" />
     </application>
 
 </manifest>

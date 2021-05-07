@@ -22,6 +22,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.e("BaseApplication::", "myPid:" + android.os.Process.myPid());//设置正常字体大小的倍数
+
         SharePreferenceUtils.put(this,"fs",1.0f);
 
 //        CrashHandler.getInstance().init(this);

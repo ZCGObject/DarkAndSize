@@ -13,7 +13,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.ikang.mydark.aidltest.AidlTestActivity;
 import com.ikang.mydark.fanshe.FanSheActivity;
+import com.ikang.mydark.service.ServiceActivity;
 import com.ikang.mydark.statictest.StaticTest0Activity;
 import com.ikang.mydark.util.SharePreferenceUtils;
 
@@ -21,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btn_skip1, btn_skip2, btn_skip3;
     private TextView fsTv, duibiTv, fsTv1, cancelTv, VpTv, RvTv, tvPalette,
-            tvText, tvDate, tvTest, tvDimen, tvReturn, tvBold, tvClone, tvFanshe, tvOOM;
+            tvText, tvDate, tvTest, tvDimen, tvReturn, tvBold, tvClone,
+            tvFanshe, tvOOM, tvService, tvAidl;
 
 
 
@@ -72,6 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvClone = findViewById(R.id.tvClone);
         tvFanshe = findViewById(R.id.tvFanshe);
         tvOOM = findViewById(R.id.tvOOM);
+        tvService = findViewById(R.id.tvService);
+        tvAidl = findViewById(R.id.tvAidl);
 
         btn_skip1.setOnClickListener(this);
         btn_skip2.setOnClickListener(this);
@@ -92,6 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvClone.setOnClickListener(this);
         tvFanshe.setOnClickListener(this);
         tvOOM.setOnClickListener(this);
+        tvService.setOnClickListener(this);
+        tvAidl.setOnClickListener(this);
 
         TypedArray array = obtainStyledAttributes(R.style.Text_En, R.styleable.textD);
         String str = array.getString(R.styleable.textD_text_dong_tai);
@@ -239,6 +246,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tvOOM:
                 startActivity(new Intent(MainActivity.this, OomTestActivity.class));
+                break;
+
+            case R.id.tvService:
+                startActivity(new Intent(MainActivity.this, ServiceActivity.class));
+                break;
+
+            case R.id.tvAidl:
+                startActivity(new Intent(MainActivity.this, AidlTestActivity.class));
                 break;
 
         }
